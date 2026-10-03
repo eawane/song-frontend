@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const container = document.getElementById("songs");
 
   try {
-    const response = await fetch("http://localhost:3000/api/songs");
+   const response = await fetch("https://song-backend-qebi.onrender.com/api/songs");
 
     if (!response.ok) {
       throw new Error("Could not load songs");
